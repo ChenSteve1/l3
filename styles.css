@@ -1,0 +1,326 @@
+/* ---------------------------Fonts-------------------------------------*/
+@font-face {
+	font-family: "Roboto";
+	src: url('./fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+}
+
+/* ---------------------------Layout-------------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 200px;  
+    grid-template-areas: 
+        "head"
+        "main"
+        "foot";
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-size: clamp(1rem, 2vw, 1.1rem); 
+    background-color: #b4b4b4;/* tan*/
+}
+
+header{
+    grid-area: head;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    opacity: 0.9;
+    margin-top: -1px;
+    z-index: 999;
+}
+
+footer{
+    grid-area: foot;
+    background-color: rgb(34, 34, 34);
+    margin-top: 2em;
+
+}
+
+.nav-title{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center; /* horizontal*/
+    align-items: center; /* vertical*/
+    height: 100%;
+    color: rgb(179, 179, 179);
+    position: relative;
+}
+
+.footer-sig{
+    position: absolute;
+    border: 1px solid grey;
+    right: 10px;
+    bottom: 10px;
+}
+
+main{
+    grid-area: main;
+    
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    min-height: 625px;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    max-width: 700px;
+    justify-content: space-evenly;
+    
+    
+}
+
+.artic{
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 170px;
+    min-height: 170px;
+    height: 25vw;
+    width: 25vw;
+    margin: 10px 5px; 
+    position: relative;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: rgb(153, 153, 153);
+    outline: none;
+
+}
+
+.origin-color{
+    background-color: rgb(111, 111, 158)
+}
+
+.class{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.inside-class{
+    visibility: hidden;
+}
+
+
+
+.top{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+} 
+
+.bottom{
+    position: absolute;
+    background-color: rgb(81, 81, 128);
+    padding: 0;
+    margin-top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-top: 1px dashed rgb(150, 150, 150);
+} 
+
+.left{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+} 
+
+.right{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin-left: 50%;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-left:1px dashed rgb(150, 150, 150) ;
+} 
+
+.bottom2{
+    position: absolute;
+    background-color:rgb(81, 81, 128);
+    padding: 0;
+    margin-top: 25%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-top: 1px dashed rgb(150, 150, 150);
+} 
+
+.bottom3{
+    position: absolute;
+    background-color:rgb(81, 81, 128);
+    padding: 0;
+    margin-top: 20%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-top: 1px dashed rgb(150, 150, 150);
+} 
+
+.twenty{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+}
+.eighty{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin-top: 20%;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-top: 1px dashed rgb(150, 150, 150);
+    
+}
+.third_eighty{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin-top: 40%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+    border-top: 1px dashed rgb(150, 150, 150);
+}
+
+.center{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.full{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+} 
+
+/* with mouse hover */
+@media (any-hover: hover) {
+    .artic:hover .class{
+        visibility: hidden;
+    }
+    
+    .artic:hover .inside-class{
+        visibility: visible;
+    }
+    
+    .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover, .full:hover{
+        background-color: rgb(143, 129, 110);
+        transition: 1.5s;
+
+    }
+}
+
+/* touchscreen */
+@media (any-hover: none) {
+    .artic:focus .class{
+        visibility: hidden;
+    }
+    
+    .artic:focus .inside-class{
+        visibility: visible;
+    }
+    
+    .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover, .full:hover{
+        background-color: rgb(143, 129, 110);
+        transition: 1.5s;
+        
+    }
+}
+
+
+/* The emerging W3C standard
+   that is currently Firefox-only */
+   body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(41, 41, 41) rgb(192, 192, 192);
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(192, 192, 192);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 41, 41);
+    border-radius: 20px;
+    border: 3px solid rgb(192, 192, 192);
+  }
+
+
+.im{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    opacity:0.9;
+    margin: 12px;
+}
+
+
+.alt-color{
+    background-color: rgb(81, 81, 128);
+}
