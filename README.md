@@ -1,5 +1,5 @@
 ﻿# L3
 
-https://github.com/ChenSteve1/l3.git
+https://chensteve1.github.io/l3/
 
 Site pour recenser les liens.
