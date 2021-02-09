@@ -79,6 +79,7 @@ main{
     align-items: center;
     padding: 1rem 0 2rem 0;
     min-height: 639px;
+    margin-top: 50px;
 
 }
 
@@ -88,7 +89,7 @@ main{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    max-width: 700px;
+    max-width: 750px;
     justify-content: space-evenly;
     
     
